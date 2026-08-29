@@ -11,7 +11,11 @@ let situacao;
 if (media >= MEDIA_MINIMA) {
     situacao = "APROVADO";
 } else if (media >= 5) {
-    notaRecuperacao = Number(prompt("Digite a nota da recuperação:"));
+    situacao = "RECUPERAÇÃO";
+
+    notaRecuperacao = Number(
+        prompt("Digite a nota da recuperação:")
+    );
 
     if (notaRecuperacao < 5) {
         situacao = "REPROVADO";
